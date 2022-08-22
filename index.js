@@ -988,12 +988,25 @@ Challenge
 5. You will hit a problem! Solve the problem!
 */
 
+// import characterData from '/data.js';
+// import Character from '/Character.js';
+
+// function render() {
+//   document.getElementById(wizard.elementId).innerHTML = wizard.getCharacterHtml();
+//   document.getElementById(orc.elementId).innerHTML = orc.getCharacterHtml();
+// }
+
+// const wizard = new Character(characterData.hero);
+// const orc = new Character(characterData.monster);
+// render();
+
+// Good housekeeping
 import characterData from '/data.js';
 import Character from '/Character.js';
 
 function render() {
-  document.getElementById(wizard.elementId).innerHTML = wizard.getCharacterHtml();
-  document.getElementById(orc.elementId).innerHTML = orc.getCharacterHtml();
+  document.getElementById('hero').innerHTML = wizard.getCharacterHtml();
+  document.getElementById('monster').innerHTML = orc.getCharacterHtml();
 }
 
 const wizard = new Character(characterData.hero);
